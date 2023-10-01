@@ -1,0 +1,171 @@
+/* Define a fonte 'FonteCabecalho' para o cabeçalho h1 no elemento header */
+@font-face {
+    font-family: 'FonteCabecalho';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fontes/Waffle.otf');
+}
+
+/* Define a fonte 'FonteCorpo' para o texto do elemento h2 dentro da seção */
+@font-face {
+    font-family: 'FonteCorpo';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fontes/Nunito.ttf');
+}
+
+/* Estiliza o cabeçalho h1 no elemento header com a fonte 'FonteCabecalho' e tamanho de 2em */
+header h1 {
+    font-family: 'FonteCabecalho';
+    font-size: 2em;
+}
+
+/* Estiliza os elementos h2 dentro da seção com a fonte 'FonteCabecalho' e tamanho de 2em */
+section h2 {
+    font-family: 'FonteCabecalho';
+    font-size: 2em;
+}
+
+/* Estiliza os itens de lista com a fonte 'FonteCorpo' e tamanho de 1.6em */
+li {
+    font-family: 'FonteCorpo';
+    font-size: 1.6em;
+}
+
+/* Estiliza os parágrafos dentro da seção com a fonte 'FonteCorpo' e tamanho de 1.6em */
+section p {
+    font-family: 'FonteCorpo';
+    font-size: 1.6em;
+}
+
+/* Estiliza os parágrafos dentro do footer com a fonte 'FonteCorpo' e tamanho de 1em */
+footer p {
+    font-family: 'FonteCorpo';
+    font-size: 1em;
+}
+
+/* Estiliza os parágrafos dentro do elemento aside com a fonte 'FonteCorpo' e tamanho de 1.3em */
+aside p {
+    font-family: 'FonteCorpo';
+    font-size: 1.3em;
+}
+
+/* Estiliza os links dentro das células da tabela com a fonte 'FonteCorpo', negrito e cor preta */
+td a {
+    font-family: 'FonteCorpo';
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+/* Estiliza os spans dentro do elemento div com a fonte 'FonteCorpo', negrito e cor preta */
+div span {
+    font-family: 'FonteCorpo';
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+/* Estiliza os elementos h3 dentro do aside com a fonte 'FonteCabecalho' e tamanho de 2em */
+aside h3 {
+    font-family: 'FonteCabecalho';
+    font-size: 2em;
+}
+
+/* Estiliza os links dentro do menu com a fonte 'FonteCorpo' e negrito */
+div#menu a {
+    font-family: 'FonteCorpo';
+    font-weight: bold;
+}
+
+/* Estiliza os links dentro dos botões com a fonte 'FonteCabecalho' e tamanho de 1.5em */
+div#botoes a {
+    font-family: 'FonteCabecalho';
+    font-size: 1.5em;
+}
+
+/* Estiliza os elementos com a classe 'container2' com a fonte 'FonteCorpo' e negrito */
+div.container2 {
+    font-family: 'FonteCorpo';
+    font-weight: bold;
+}
+
+/* Estiliza os parágrafos dentro do elemento div com a fonte 'FonteCorpo' */
+div p {
+    font-family: 'FonteCorpo';
+}
+
+/* Estiliza o conteúdo da popup com a fonte 'FonteCorpo' */
+div.popup-content {
+    font-family: 'FonteCorpo';
+}
+
+/* Estiliza os input com a fonte 'FonteCorpo'/
+input {
+    font-family: 'FonteCorpo';
+}
+
+/* Estiliza os títulos h2 dentro do conteúdo da popup com a fonte 'FonteCabecalho' e tamanho de 1.8em */
+div.popup-content h2 {
+    font-family: 'FonteCabecalho';
+    font-size: 1.8em;
+}
+
+/* Estiliza as labels com tamanho de fonte de 1.1em */
+label {
+    font-size: 1.1em;
+}
+
+/* Estiliza os botões com a fonte 'FonteCabecalho' e tamanho de 1.5em */
+button {
+    font-family: 'FonteCabecalho';
+    font-size: 1.5em;
+}
+
+/* Estiliza os elementos de seleção com a fonte 'FonteCorpo' e negrito */
+select {
+    font-family: 'FonteCorpo';
+    font-weight: bold;
+}
+
+/* Estiliza os cabeçalhos de tabela com a fonte 'FonteCorpo' e tamanho de 1.4em */
+th {
+    font-family: 'FonteCorpo';
+    font-size: 1.4em;
+}
+
+/* Estiliza os elementos h3 com a fonte 'FonteCorpo' */
+h3 {
+    font-family: 'FonteCorpo';
+}
+
+/* Estiliza os elementos h5 com a fonte 'FonteCorpo' */
+h5 {
+    font-family: 'FonteCorpo';
+}
+
+/* Estiliza os elementos com a classe 'alinha' com a fonte 'FonteCorpo' */
+.alinha {
+    font-family: 'FonteCorpo';
+}
+
+/* Estiliza os itens com a classe 'item' com a fonte 'FonteCorpo' */
+.item {
+    font-family: 'FonteCorpo';
+}
+
+/* Estiliza os elementos com a classe 'subtotal' com a fonte 'FonteCorpo' e tamanho de 1.1em */
+.subtotal {
+    font-family: 'FonteCorpo';
+    font-size: 1.1em;
+}
+
+/* Estiliza o botão de remover com tamanho de fonte de 1em */
+#removerBtn {
+    font-size: 1em;
+}
+
+/* Estiliza os elementos com a classe 'agradecimento' com tamanho de fonte de 1.3em */
+.agradecimento {
+    font-size: 1.3em;
+}

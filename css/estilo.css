@@ -1,0 +1,634 @@
+/* Estilo para o corpo do documento */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFE9C9;
+    height: 100%;
+    margin: 0;
+}
+
+/* Definições para a tag HTML */
+html {
+    min-width: 450px;
+}
+
+/* Estilo para o elemento canvas (ondas)*/
+canvas {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-width: 450px;
+}
+
+/* Estilos para o cabeçalho com ID "cabecalho" */
+header#cabecalho {
+    height: 80px;
+    background-color: #8f2626;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para o cabeçalho com ID "cabecalhopedido" */
+header#cabecalhopedido {
+    width: 100%;
+    height: 80px;
+    background-color: #fbbe05;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para o cabeçalho com ID "cabecalhocarrinho" */
+header#cabecalhocarrinho {
+    height: 80px;
+    background-color: #fbbe05;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para os títulos nos cabeçalhos */
+header#cabecalho h1,
+header#cabecalhopedido h1,
+header#cabecalhocarrinho h1 {
+    color: white;
+    margin: 0;
+}
+
+/* Estilos para a interface geral da página */
+div#interface {
+    width: 100%;
+    justify-content: center;
+}
+
+/* Estilos para a lista de menu */
+ul#menu {
+    text-align: center;
+}
+
+/* Estilos para os itens da lista de menu */
+li {
+    display: inline-block;
+    margin-right: 35px;
+    color: white;
+    border: 0 1px 0 0 white;
+}
+
+/* Estilos para itens da lista de menu quando estão em foco ou em hover */
+li:hover,
+li:focus {
+    transform: scale(1.2);
+    color: #FFC500;
+    font-weight: bolder;
+}
+
+/* Estilos para links dentro do menu */
+menu a {
+    margin-left: 10px;
+    background-color: #8f2626;
+}
+
+/* Estilos para o rodapé com ID "rodape" */
+footer#rodape {
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8f2626;
+    color: white;
+    height: 60px;
+    font-weight: bold;
+}
+
+/* Estilos para links dentro do rodapé */
+footer#rodape a {
+    color: white;
+}
+
+/* Estilos para links do rodapé quando estão em hover */
+footer#rodape a:hover {
+    color: black;
+}
+
+/* Estilos para as imagens dentro da figura com classe "foto-legenda" */
+figure.foto-legenda img {
+    margin: auto;
+    width: 80%;
+}
+
+/* Estilos para as legendas dentro da figura com classe "foto-legenda" */
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition-duration: 1s;
+}
+
+/* Estilos para as legendas quando estão em hover */
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+/* Estilos para a barra lateral com ID "lateral" */
+aside#lateral {
+    display: block;
+    padding: 20px 0px 20px 0px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Estilos para os botões */
+div#botoes {
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Estilos para os links de botões */
+div#botoes a {
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #9e2d2d;
+    border-radius: 20px;
+    padding: .5rem 1rem;
+    display: inline-block;
+    letter-spacing: -1px;
+    user-select: none;
+    color: rgb(30, 30, 32);
+    box-shadow: #721e1e 5px 5px 0px;
+    transition: all .195s ease-in-out;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    background-color: rgb(242, 243, 245);
+}
+
+/* Estilos para links de botões quando estão em hover */
+div#botoes a:hover {
+    transform: translateX(5px) translateY(5px);
+    box-shadow: #9c3030 8px 10px 0px;
+    background-color: white;
+    color: #b31f1f;
+    font-weight: bolder;
+}
+
+/* Estilos para o botão de logout */
+div#botoes a#logout {
+    border: 2px solid #9e2d2d;
+    color: rgb(242, 243, 245);
+    box-shadow: rgb(30, 30, 32) 5px 5px 0px;
+    background-color: #721e1e;
+}
+
+/* Estilos para o botão de logout quando está em hover */
+div#botoes a#logout:hover {
+    box-shadow: rgb(30, 30, 32);
+    background-color: white;
+    color: #b31f1f;
+}
+
+/* Estilos para as listas com classe "topicos" */
+ul.topicos {
+    text-align: left;
+}
+
+/* Estilos para a seção com ID "corpo" */
+section#corpo {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    height: 100%;
+}
+
+/* Estilos para imagens com classe "imagem" */
+.imagem {
+    width: 450px;
+    display: block;
+    animation: balancar 8s ease-in-out infinite;
+    transition: transform 0.3 ease;
+}
+
+/* Estilos para imagens quando estão em hover ou foco */
+.imagem:hover,
+.imagem:focus {
+    transform: translateX(5px) translateY(5px) scale(1.1);
+}
+
+/* Animação de balanço para imagens */
+@keyframes balancar {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+}
+
+/* Estilos para a classe "popup" */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/* Estilos para o conteúdo da popup */
+.popup-content {
+    background-color: #FFE9C9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: dashed 3px #8f2626;
+    white-space: nowrap;
+}
+
+/* Estilos para o botão de fechar a popup */
+.close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #8f2626;
+    font-size: 25pt;
+}
+
+/* Estilos para os títulos dentro do conteúdo da popup */
+div.popup-content h2 {
+    text-align: center;
+    color: #1d1d1d;
+}
+
+/* Estilos para a tag de label */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilos para os campos de input */
+input#username[type="text"],
+input#newUsername[type="text"],
+input#password[type="password"],
+input#newPassword[type="password"],
+input#newPasswordConfirm[type="password"] {
+    width: 91.9%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para o botão de login */
+.login {
+    background-color: #8f2626;
+    color: #fff;
+    border: none;
+    display: block;
+    margin: 15px auto auto auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*verificar*/
+button {
+    background: none;
+    border: none;
+}
+
+/* Estilos para o botão de login quando está em hover */
+.login:hover {
+    background-color: rgb(204, 27, 27);
+}
+
+/* Estilos para mensagens de erro */
+p.error {
+    color: red;
+}
+
+/* Estilos para a classe "categoria" */
+.categoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Estilos para a classe "sabores" */
+.sabores {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #721e1e;
+    max-width: 80%;
+    height: fit-content;
+    margin-top: 50px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para as setas de navegação de imagens */
+img.proximo,
+img.anterior {
+    width: 100px;
+    height: 100px;
+    animation: balancar 2s ease-in-out infinite;
+    transition: transform 0.3 ease;
+}
+
+/* Estilos para a seta de navegação "próximo" */
+img.proximo {
+    margin-left: 20px;
+}
+
+/* Estilos para a seta de navegação "anterior" */
+img.anterior {
+    margin-right: 20px;
+}
+
+/* Estilos para a classe "hidden" (oculta o elemento) */
+.hidden {
+    display: none;
+}
+
+/* Estilos para a margem 0 */
+.margin0 {
+    margin: 0px;
+}
+
+/* Estilos para a linha horizontal */
+hr {
+    width: 90%;
+    border-color: #FFE9C9;
+}
+
+/* Estilos para a tabela */
+table {
+    color: #FFE9C9;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Estilos para a tabela com ID "tabelaCarrinho" */
+table#tabelaCarrinho {
+    border-collapse: collapse;
+}
+
+/* Estilos para as células da tabela */
+td {
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Estilos para os checkboxes */
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    margin: 5px;
+    margin-right: 15px;
+}
+
+/* Estilos para a aparência do checkbox antes de ser marcado */
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background-color: #FFE9C9;
+}
+
+/* Estilos para a aparência do checkbox depois de ser marcado */
+input[type=checkbox]:checked:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background-color: #fbbe05;
+}
+
+/* Estilos para o sinal de marcação do checkbox */
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid #721e1e;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+
+/* Estilos para os radio buttons */
+input[type=radio] {
+    position: relative;
+    cursor: pointer;
+    margin: 5px;
+    margin-right: 15px;
+}
+
+/* Estilos para a aparência do radio button antes de ser marcado */
+input[type=radio]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    left: -3px;
+    background-color: #FFE9C9;
+    border-radius: 100px;
+}
+
+/* Estilos para a aparência do radio button depois de ser marcado */
+input[type=radio]:checked:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    left: -3px;
+    background-color: #fbbe05;
+}
+
+/* Estilos para o sinal de marcação do radio button */
+input[type=radio]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid #721e1e;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: -1px;
+    left: 4px;
+}
+
+/* Estilos para as imagens de entrega e retirada */
+img#entrega,
+img#retirada {
+    width: 50%;
+    margin-top: 20px;
+    animation: balancar 2s ease-in-out infinite;
+    transition: transform 0.3 ease;
+}
+
+/* Estilos para as imagens de cartão, dinheiro e confirmação */
+img#cartao,
+img#dinheiro,
+img#confirma {
+    width: 50%;
+    animation: balancar 2s ease-in-out infinite;
+    transition: transform 0.3 ease;
+}
+
+/* Estilos para a imagem da pizza */
+.imagemPizza {
+    width: 75px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Estilos para o espaçamento */
+.espaco {
+    margin-bottom: 10px;
+}
+
+/* Estilos para o botão de remover */
+#removerBtn {
+    background-color: #FFA500;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Estilos para o botão de remover quando está em hover */
+#removerBtn:hover {
+    background-color: #FBBE05;
+}
+
+/* Estilos para o botão de checkout quando está em hover */
+#checkout:hover {
+    background-color: #FBBE05;
+}
+
+/* Estilos para alinhamento central */
+.center {
+    text-align: center;
+}
+
+/* Estilos para alinhamento à direita */
+.right {
+    text-align: right;
+}
+
+/* Estilos para a classe "subtotal" */
+.subtotal {
+    text-align: center;
+}
+
+/* Estilos para as células de itens na tabela */
+tr.item td {
+    background-color: #481414;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Estilos para os campos de número */
+input[type=number] {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Estilos para as células de subtotal na tabela */
+tr.subtotal td {
+    color: #FFE9C9;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Estilos para o botão de checkout */
+#checkout {
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para fundo branco */
+.branco {
+    background-color: white;
+}
+
+/* Estilos para a área de endereço */
+.endereco {
+    background-color: #ffe9c9;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para o tamanho dos campos de entrada */
+.sizeInput {
+    width: 90%;
+}

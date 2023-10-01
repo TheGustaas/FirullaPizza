@@ -1,0 +1,167 @@
+/* Estilos para telas com largura máxima de 768px */
+@media screen and (max-width: 768px) {
+
+  /* Altera o tamanho da fonte dos parágrafos dentro da seção para 1.3em */
+  section p {
+    font-size: 1.3em;
+  }
+
+  /* Altera o tamanho da fonte dos parágrafos dentro do footer para 0.5em */
+  footer p {
+    font-size: .5em;
+  }
+
+  /* Altera o tamanho da fonte dos parágrafos dentro do aside para 1em */
+  aside p {
+    font-size: 1em;
+  }
+
+  /* Altera o tamanho da fonte dos títulos h3 dentro do aside para 1.2em */
+  aside h3 {
+    font-size: 1.2em;
+  }
+
+  /* Altera a fonte, o peso e o tamanho dos links no menu */
+  div#menu a {
+    font-family: 'FonteCorpo';
+    font-weight: bold;
+    font-size: 15px;
+    padding: .5rem .5rem;
+  }
+
+  /* Altera a fonte e o tamanho dos itens de lista */
+  li {
+    font-family: 'FonteCorpo';
+    font-size: 1.2em;
+  }
+}
+
+/* Estilos para telas com largura mínima de 928px */
+@media (min-width: 928px) {
+
+  /* Altera a fonte e o tamanho do título h1 no cabeçalho para 3em */
+  header h1 {
+    font-family: 'FonteCabecalho';
+    font-size: 3em;
+  }
+}
+
+/* Estilos para telas com largura máxima de 850px */
+@media (max-width: 850px) {
+
+  /* Ajusta o tamanho e a posição dos elementos com a classe "input" */
+  .input {
+    width: 17px;
+    height: 17px;
+  }
+
+  .input::before,
+  .input::after {
+    height: 3px;
+  }
+
+  .input::before {
+    left: calc(-4vw + 8.5px);
+  }
+
+  .input::after {
+    right: calc(-4vw + 8.5px);
+  }
+}
+
+/* Estilos para telas com largura máxima de 600px */
+@media (max-width: 600px) {
+
+  /* Modifica o layout dos elementos com a classe "flex-parent" */
+  .flex-parent {
+    justify-content: initial;
+  }
+
+  /* Ajusta o layout e as dimensões dos elementos com a classe "input-flex-container" */
+  .input-flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 15vh;
+  }
+
+  /* Ajusta o tamanho e a aparência dos elementos com a classe "input" */
+  .input {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px 50px;
+    background-color: #aeb6bf;
+  }
+
+  .input::before,
+  .input::after {
+    content: none;
+  }
+
+  /* Ajusta o tamanho e a posição dos elementos dentro do elemento com a classe "input" */
+  .input span {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .input span::before {
+    top: calc(100% + 5px);
+    transform: translateX(-50%);
+    text-indent: 0;
+    text-align: center;
+  }
+
+  .input span::after {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ecf0f1;
+  }
+
+  /* Modifica o layout e o alinhamento dos elementos com a classe "description-flex-container" */
+  .description-flex-container {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+/* Estilos para telas com largura máxima de 968px */
+@media (max-width: 968px) {
+
+  /* Ajusta o tamanho da fonte dos títulos h2 dentro da seção para 1.5em */
+  section h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* Estilos para telas com largura máxima de 570px */
+@media (max-width: 570px) {
+
+  /* Ajusta o tamanho e a posição das setas de navegação */
+  img.anterior,
+  img.proximo {
+    width: 50px;
+    height: 50px;
+  }
+
+  img.proximo {
+    margin-left: 10px;
+  }
+
+  img.anterior {
+    margin-right: 10px;
+  }
+}
+
+/* Estilos para telas com largura máxima de 724px */
+@media (max-width: 724px) {
+
+  /* Ajusta o layout e a posição do cabeçalho com ID "cabecalhocarrinho" */
+  header#cabecalhocarrinho {
+    margin-bottom: 30px;
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="shortcut icon" type="imagem/png" href="./imagens/oizza.png" />
+    <title>Firulla's Pizzaria</title>
+</head>
+
+<body>
+    <canvas id="c"></canvas>
+    <script src="./js/onda.js"></script>
+    <div id="interface">
+        <header id="cabecalho">
+            <h1>FIRULLA'S PIZZARIA</h1>
+            <ul id="menu">
+                <a href="#" id="loginMenu">
+                    <li>Login</li>
+                </a>
+                <a href="#" id="cadastroMenu">
+                    <li>Cadastre-se</li>
+                </a>
+                <a href="./docs/Relatório Firulas Pizzaria.pdf">
+                    <li>Sobre</li>
+                </a>
+            </ul>
+        </header>
+        <section id="corpo">
+            <h2>Firulla's pizzaria, a pizza que mata sua larica!</h2>
+            <p>Uma nova maneira de matar o que te mata!</p>
+            <aside id="lateral">
+                <figure class="foto-legenda">
+                    <img src="./imagens/pizza.png" class="imagem">
+                </figure>
+            </aside>
+        </section>
+        <div id="loginPopup" class="popup">
+            <div class="popup-content">
+                <span class="close" id="closeLoginPopup">&times;</span>
+                <h2>Login de Cliente</h2>
+                <form id="loginForm">
+                    <label for="username">Nome de Usuário:</label>
+                    <input type="text" id="username" name="username" placeholder="Nome de usuário" required>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" placeholder="Senha" required>
+                    <button type="submit" class="login">Entrar</button>
+                </form>
+                <p id="errorLogin" class="error"></p>
+            </div>
+        </div>
+        <div id="cadastroPopup" class="popup">
+            <div class="popup-content">
+                <span class="close" id="closeCadastroPopup">&times;</span>
+                <h2>Cadastro de Cliente</h2>
+                <form id="cadastroForm">
+                    <label for="newUsername">Digite um nome de usuário:</label>
+                    <input type="text" id="newUsername" name="newUsername" placeholder="Nome de usuário" required>
+                    <label for="newPassword">Digite uma senha:</label>
+                    <input type="password" id="newPassword" name="newPassword" placeholder="Senha" required>
+                    <label for="newPasswordConfirm">Repita a senha digitada:</label>
+                    <input type="password" id="newPasswordConfirm" name="newPasswordConfirm"
+                        placeholder="Repita a senha" required>
+                    <button type="submit" class="login">Cadastrar-se</button>
+                </form>
+                <p id="errorCadastro" class="error"></p>
+            </div>
+        </div>
+        <script src="./js/popup.js"></script>
+        <footer id="rodape">
+            <p><a href="https://www.anchieta.br"> Unianchieta</a> | Desenvolvido por <a href="./docs/Relatório Firulas Pizzaria.pdf">Firulla's Pizzaria</a>
+                | © Todos os direitos reservados
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

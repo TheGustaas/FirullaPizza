@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../imagens/oizza.png" />
+    <title>Firulla's Pizzaria</title>
+</head>
+
+<body>
+    <canvas id="c"></canvas>
+    <script src="../js/onda.js"></script>
+    <div id="interface">
+        <header id="cabecalhocarrinho">
+            <h1>FIRULLA'S PIZZARIA</h1>
+            <div id="botoes">
+                <a href="#" id="carrinho">Carrinho</a>
+                <a href="#" id="logout">Logout</a>
+            </div>
+        </header>
+        <section id="corpo">
+            <div id="tradicional" class="categoria">
+                <div class="sabores">
+                    <table class="teste">
+                        <tr>
+                            <td colspan="4" class="center">
+                                <h2 class="margin0">Confirmação de pedido</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="center" colspan="4">
+                                <h2 class="margin0" id="total"></h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="center">
+                                <h2 class="margin0 espaco">Forma de pagamento</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="center" colspan="2">
+                                <input type="radio" name="pagamento" id="dinheiro" value="dinheiro"
+                                    class="margin0 pagamento">
+                                <label for="dinheiro" class="margin0">
+                                    <img src="../imagens/Dinheiro Sb.png" alt="" id="dinheiro">
+                                </label>
+                            </td>
+                            <td class="center" colspan="2" colspan="2">
+                                <input type="radio" name="pagamento" id="cartao" value="cartao"
+                                    class="margin0 pagamento">
+                                <label for="cartao" class="margin0">
+                                    <img src="../imagens/Cartão Sb.png" alt="" id="cartao">
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="center">
+                                <label for="dinheiro" class="margin0">
+                                    <h3>Dinheiro</h3>
+                                </label>
+                            </td>
+                            <td colspan="2" class="center">
+                                <label for="cartao" class="margin0">
+                                    <h3>Cartão</h3>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="center">
+                                <h2 class="margin0 espaco">Entrega ou Retirada</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="center" colspan="2">
+                                <input type="radio" name="entrega" id="entrega" value="entrega" class="margin0 tipo">
+                                <label for="entrega" class="margin0">
+                                    <img src="../imagens/entrega.png" alt="" id="entrega">
+                                </label>
+                            </td>
+                            <td class="center" colspan="2">
+                                <input type="radio" name="entrega" id="retirada" value="retirada" class="margin0 tipo">
+                                <label for="retirada" class="margin0">
+                                    <img src="../imagens/retirada.png" alt="" id="retirada">
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="center">
+                                <label for="entrega" class="margin0">
+                                    <h3>Entrega</h3>
+                                </label>
+                            </td>
+                            <td colspan="2" class="center">
+                                <label for="retirada" class="margin0">
+                                    <h3>Retirada</h3>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr id="linha">
+                            <td colspan="4">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr id="endereco">
+                            <td class="right" colspan="1"><label for="rua">Endereço: </label></td>
+                            <td colspan="3">
+                                <input class="endereco sizeInput" id="rua" type="text" placeholder="Rua, Avenida...">
+                            </td>
+                        </tr>
+                        <tr id="bairro">
+                            <td class="right"><label for="bairro2">Bairro: </label></td>
+                            <td>
+                                <input class="endereco" id="bairro2" type="text" placeholder="Bairro">
+                            </td>
+                            <td class="right"><label for="numero">Nº: </label></td>
+                            <td>
+                                <input class="endereco margin0" id="numero" type="text" placeholder="Numero" size="5">
+                            </td>
+                        </tr>
+                        <tr id="cidade">
+                            <td class="right"><label for="cidade2">Cidade: </label></td>
+                            <td>
+                                <input class="endereco" id="cidade2" type="text" placeholder="Cidade">
+                            </td>
+                            <td class="right"><label for="cep">CEP: </label></td>
+                            <td>
+                                <input class="endereco" id="cep" type="text" placeholder="CEP" size="8">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <button style="margin-top: 15px;" id="confirmar" onmouseover="mudaFoto('../imagens/Fechado.png')"
+                onmouseout="mudaFoto('../imagens/Aberto.png')" class="hidden"><img id="icone"
+                    src="../imagens/Aberto.png" alt=""></button>
+        </section>
+        <script src="../js/checkout.js"></script>
+        <script src="../js/valida.js"></script>
+    </div>
+</body>
+
+</html>

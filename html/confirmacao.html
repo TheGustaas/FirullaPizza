@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../imagens/oizza.png" />
+
+    <title>Firulla's Pizzaria</title>
+</head>
+
+<body>
+    <canvas id="c"></canvas>
+    <script src="../js/onda.js"></script>
+    
+
+
+    <div id="interface">
+        <header id="cabecalhocarrinho">
+            <h1>FIRULLA'S PIZZARIA</h1>
+            <div id="botoes">
+                <a href="#" id="logout">Logout</a>
+            </div>
+        </header>
+
+        <section id="corpo">
+            <div id="tradicional" class="categoria">
+                <div class="sabores" data-div="tradicional">
+                    <table>
+                        <tr>
+                            <td colspan="4" class="center">
+                                <h2 class="margin0">Confirmação de pedido</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="center agradecimento" colspan="4">
+                                <h3 class="margin0">Obrigado por escolher Firulla's Pizzaria</h3>
+                                <h3 class="margin0">Seu pedido foi confirmado com sucesso!</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="center"><img src="../imagens/pizzaFinalizada.png" alt=""
+                                    id="confirma"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <br>
+                            </td>
+                        </tr>
+                        <tr id="dinheiro">
+                            <td colspan="4" class="center">
+                                <h3 class="margin0">Estamos com o troco em mãos!</h3>
+                            </td>
+                        </tr>
+                        <tr id="cartao">
+                            <td colspan="4" class="center">
+                                <h3 class="margin0">Estamos com a maquininha em mãos!</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <br>
+                            </td>
+                        </tr>
+                        <tr id="entrega">
+                            <td colspan="4" class="center">
+                                <h3 class="margin0">Tempo para entrega: 60 minutos</h3>
+                            </td>
+                        </tr>
+                        <tr id="retirada">
+                            <td colspan="4" class="center">
+                                <h3 class="margin0">Tempo para retirada: 45 minutos</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="center">
+                                <h2 class="margin0">GRAZIE E BOA LARICA!</h2>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <script src="../js/confirmacao.js"></script>
+        <script src="../js/valida.js"></script>
+
+    </div>
+</body>
+
+</html>

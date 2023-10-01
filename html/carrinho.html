@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=0.8">
+	<link rel="stylesheet" href="../css/estilo.css">
+	<link rel="stylesheet" href="../css/fonts.css">
+	<link rel="stylesheet" href="../css/responsive.css">
+	<link rel="shortcut icon" type="image/png" href="../imagens/oizza.png" />
+	<title>Firulla's Pizzaria</title>
+</head>
+<canvas id="c"></canvas>
+<script src="../js/onda.js"></script>
+
+<body>
+	<div id="interface">
+		<header id="cabecalhocarrinho">
+			<h1>FIRULLA'S PIZZARIA</h1>
+			<div id="botoes">
+				<a href="#" id="logout">Logout</a>
+			</div>
+		</header>
+		<section id="corpo">
+			<div class="categoria">
+				<div class="sabores">
+					<table id="tabelaCarrinho">
+						<thead>
+							<tr>
+								<td colspan="6" class="center">
+									<h2 class="margin0" style="padding-top: 10px; padding-bottom: 10px;">Carrinho</h2>
+								</td>
+							</tr>
+							<tr id="vazio">
+								<td colspan="6" class="center">
+									<h2 class="margin0" style="padding-top: 10px; padding-bottom: 10px;">Vazio</h2>
+								</td>
+							</tr>
+							<tr class="alinha" id="alinha">
+								<td class="center" id="foto">Foto</td>
+								<td class="center" id="qdade">Qtd.</td>
+								<td class="center" id="preco">Valor un.</td>
+								<td class="center" id="descricao">Item</td>
+								<td class="center" id="preco">Preço</td>
+								<td class="center" id="remover">Remover</td>
+							</tr>
+						</thead>
+						<tr class="item" id="1">
+							<td><img src="../imagens/Pizzas/1.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput"
+									id="number1"></td>
+							<td class="preco">47.90</td>
+							<td id="valoresRecebidos">Calabresa</td>
+							<td class="precoFinal">47.90</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="2">
+							<td><img src="../imagens/Pizzas/2.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">57.90</td>
+							<td id="valoresRecebidos">Portuguesa</td>
+							<td class="precoFinal">57.90</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="3">
+							<td><img src="../imagens/Pizzas/3.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">57.90</td>
+							<td id="valoresRecebidos">Marguerita</td>
+							<td class="precoFinal">57.90</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="4">
+							<td><img src="../imagens/Pizzas/4.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">47.90</td>
+							<td id="valoresRecebidos">Frango com catupiry</td>
+							<td class="precoFinal">47.90</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="5">
+							<td><img src="../imagens/Pizzas/5.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">47.90</td>
+							<td id="valoresRecebidos">Muçarela</td>
+							<td class="precoFinal">47.90</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="6">
+							<td><img src="../imagens/Pizzas/6.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">47.90</td>
+							<td id="valoresRecebidos">Napolitana</td>
+							<td class="precoFinal">47.90</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="7">
+							<td><img src="../imagens/Pizzas/7.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">59.90</td>
+							<td id="valoresRecebidos">Quatro queijos</td>
+							<td class="precoFinal">59.90</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="8">
+							<td><img src="../imagens/Pizzas/8.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">42.90</td>
+							<td id="valoresRecebidos">Atum com cebola</td>
+							<td class="precoFinal">42.90</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="9">
+							<td><img src="../imagens/Pizzas/9.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">42.90</td>
+							<td id="valoresRecebidos">À moda</td>
+							<td class="precoFinal">42.90</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="10">
+							<td><img src="../imagens/Pizzas/10.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">42.90</td>
+							<td id="valoresRecebidos">Carioca</td>
+							<td class="precoFinal">42.90</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="11">
+							<td><img src="../imagens/Pizzas/11.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">42.90</td>
+							<td id="valoresRecebidos">Champignon</td>
+							<td class="precoFinal">42.90</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="12">
+							<td><img src="../imagens/Pizzas/12.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">49.90</td>
+							<td id="valoresRecebidos">Lombo canadense</td>
+							<td class="precoFinal">49.90</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="13">
+							<td><img src="../imagens/Pizzas/13.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">59.90</td>
+							<td id="valoresRecebidos">Chocolate com M&M</td>
+							<td class="precoFinal">59.90</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="14">
+							<td><img src="../imagens/Pizzas/14.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">52.90</td>
+							<td id="valoresRecebidos">Romeu e Julieta</td>
+							<td class="precoFinal">52.90</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="15">
+							<td><img src="../imagens/Pizzas/15.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">59.90</td>
+							<td id="valoresRecebidos">Creme de Avelã com Frutas</td>
+							<td class="precoFinal">59.90</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="16">
+							<td><img src="../imagens/Pizzas/16.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">59.90</td>
+							<td id="valoresRecebidos">Banana caramelizada</td>
+							<td class="precoFinal">59.90</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="17">
+							<td><img src="../imagens/Pizzas/17.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">8.00</td>
+							<td id="valoresRecebidos">Refrigerante Lata</td>
+							<td class="precoFinal">8.00</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="18">
+							<td><img src="../imagens/Pizzas/18.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">12.00</td>
+							<td id="valoresRecebidos">Refrigerante Garrafa</td>
+							<td class="precoFinal">12.00</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="19">
+							<td><img src="../imagens/Pizzas/19.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">7.00</td>
+							<td id="valoresRecebidos">Suco Lata</td>
+							<td class="precoFinal">7.00</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="20">
+							<td><img src="../imagens/Pizzas/20.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">20.00</td>
+							<td id="valoresRecebidos">Suco Natural Jarra</td>
+							<td class="precoFinal">20.00</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="21">
+							<td><img src="../imagens/Pizzas/21.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">12.00</td>
+							<td id="valoresRecebidos">Energético</td>
+							<td class="precoFinal">12.00</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="22">
+							<td><img src="../imagens/Pizzas/22.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">15.00</td>
+							<td id="valoresRecebidos">Cerveja Lata</td>
+							<td class="precoFinal">15.00</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="23">
+							<td><img src="../imagens/Pizzas/23.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">18.00</td>
+							<td id="valoresRecebidos">Milk Shake</td>
+							<td class="precoFinal">18.00</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr class="item" id="24">
+							<td><img src="../imagens/Pizzas/24.png" class="imagemPizza"></td>
+							<td class="quantidade"><input type="number" value="1" min="1" max="99" class="qtyinput">
+							</td>
+							<td class="preco">4.00</td>
+							<td id="valoresRecebidos">Água</td>
+							<td class="precoFinal">4.00</td>
+							<td class="remover"><button id="removerBtn">X</button></td>
+						</tr>
+						<tr>
+							<td colspan="6" style="height: 15px;">
+							</td>
+						</tr>
+						<tr class="subtotal">
+							<td colspan="2"></td>
+							<td colspan="1">Total:</td>
+							<td colspan="1" style="text-align: right;">R$&nbsp;</td>
+							<td colspan="1" id="total"></td>
+							<td colspan="1">&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="6" style="height: 15px;">
+							</td>
+						</tr>
+						<tr class="center hidden" id="butao">
+							<td colspan="6"><button id="checkout">Checkout</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+	</div>
+	</section>
+
+	<script src="../js/divs.js"></script>
+	<script src="../js/carrinho.js"></script>
+	<script src="../js/valida.js"></script>
+	</div>
+</body>
+
+</html>

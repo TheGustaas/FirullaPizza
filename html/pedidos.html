@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="shortcut icon" type="image/png" href="../imagens/oizza.png" />
+    <title>Firulla's Pizzaria</title>
+</head>
+
+<body>
+    <canvas id="c"></canvas>
+    <script src="../js/onda.js"></script>
+    <div id="interface">
+        <header id="cabecalhocarrinho">
+            <h1>FIRULLA'S PIZZARIA</h1>
+            <div id="botoes">
+                <a href="#" id="logout" class="logout">Logout</a>
+            </div>
+        </header>
+        <header id="cabecalhopedido">
+            <div id="botoes" >
+                <a href="#" id="tradicionalBtn">Tradicional</a>
+                <a href="#" id="docesBtn">Doces</a>
+                <a href="#" id="bebidasBtn">Bebidas</a>
+            </div>
+        </header>
+        <section id="corpo">
+            <div id="tradicional" class="categoria">
+                <a href="#" class="anterior"><img src="../imagens/esquerda.png" class="anterior"></a>
+                <div class="sabores" data-div="tradicional">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="1" value="1" class="margin0">
+                            </td>
+                            <td>
+                                <label for="1" class="margin0">
+                                    <h3 class="margin0">Calabresa</h3>
+                                    <h5 class="margin0">Molho de tomate, Muçarela, Calabresa, Cebola e Orégano.</h5>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="1" class="margin0">
+                                    <h2 class="margin0">R$47,90</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="2" value="2" class="margin0">
+                            </td>
+                            <td>
+                                <label for="2" class="margin0">
+                                    <h3 class="margin0">Portuguesa</h3>
+                                    <h5 class="margin0">Molho de tomate, Muçarela, Presunto, Azeitona, Ovo, Cebola e
+                                        Orégano.</h5>
+                                </label>
+                            </td>
+                            <td><label for="2" class="margin0">
+                                    <h2 class="margin0">R$57,90</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="3" value="3" class="margin0">
+                            </td>
+                            <td>
+                                <label for="3" class="margin0">
+                                    <h3 class="margin0">Marguerita</h3>
+                                    <h5 class="margin0">Molho de tomate, Muçarela, Tomate, Manjericão e Orégano.
+                                    </h5>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="3" class="margin0">
+                                    <h2 class="margin0">R$57,90</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="4" value="4" class="margin0">
+                            </td>
+                            <td>
+                                <label for="4" class="margin0">
+                                    <h3 class="margin0">Frango com catupiry</h3>
+                                    <h5 class="margin0">Molho de tomate, Muçarela, Frango, Catupiry e Orégano. </h5>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="4" class="margin0">
+                                    <h2 class="margin0">R$47,90</h2>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="sabores hidden" data-div="tradicional">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="5" value="5" class="margin0">
+                            </td>
+                            <td>
+                                <label for="5" class="margin0">
+                                    <h3 class="margin0">Muçarela</h3>
+                                    <h5 class="margin0">Molho de tomate, Muçarela e Orégano.</h5>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="5" class="margin0">
+                                    <h2 class="margin0">R$47,90</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="6" value="6" class="margin0">
+                            </td>
+                            <td>
+                                <label for="6" class="margin0">
+                                    <h3 class="margin0">Napolitana</h3>
+                                    <h5 class="margin0">Molho de tomate, Muçarela, Tomate, Parmesão e Orégano. </h5>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="6" class="margin0">
+                                    <h2 class="margin0">R$47,90</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="7" value="7" class="margin0">
+                            </td>
+                            <td>
+                                <label for="7" class="margin0">
+                                    <h3 class="margin0">Quatro queijos</h3>
+                                    <h5 class="margin0">Molho de tomate, Muçarela, Parmesão, Catupiry, Gorgonzola e
+                                        orégano. </h5>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="7" class="margin0">
+                                    <h2 class="margin0">R$59,90</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="8" value="8" class="margin0">
+                            </td>
+                            <td>
+                                <label for="8" class="margin0">
+                                    <h3 class="margin0">Atum com cebola</h3>
+                                    <h5 class="margin0">Molho de tomate, Cebola, Muçarela, Atum e Orégano. </h5>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="8" class="margin0">
+                                    <h2 class="margin0">R$42,90</h2>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="sabores hidden" data-div="tradicional">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="9" value="9" class="margin0">
+                            </td>
+                            <td>
+                                <label for="9" class="margin0">
+                                    <h3 class="margin0">À moda</h3>
+                                    <h5 class="margin0">Molho de tomate, Muçarela, Calabresa, Azeitona, Milho, Palmito,
+                                        Catupiry e Oregano. </h5>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="9" class="margin0">
+                                    <h2 class="margin0">R$42,90</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="10" value="10" class="margin0">
+                            </td>
+                            <td>
+                                <label for="10" class="margin0">
+                                    <h3 class="margin0">Carioca</h3>
+                                    <h5 class="margin0">Molho de tomate, Muçarela, Calabresa, Azeitona, Tomate, Ovo e
+                                        Orégano.
+                                    </h5>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="10" class="margin0">
+                                    <h2 class="margin0">R$42,90</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="11" value="11" class="margin0">
+                            </td>
+                            <td>
+                                <label for="11" class="margin0">
+                                    <h3 class="margin0">Champignon</h3>
+                                    <h5 class="margin0">Molho de tomate, Muçarela, Champignon e Orégano.</h5>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="11" class="margin0">
+                                    <h2 class="margin0">R$42,90</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="12" value="12" class="margin0">
+                            </td>
+                            <td>
+                                <label for="12" class="margin0">
+                                    <h3 class="margin0">Lombo Canadense</h3>
+                                    <h5 class="margin0">Molho de tomate, Muçarela, Lombo Canadense e Orégano.</h5>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="12" class="margin0">
+                                    <h2 class="margin0">R$49,90</h2>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" class="proximo"><img src="../imagens/direita.png" class="proximo"></a>
+            </div>
+            <div id="doce" class="categoria hidden">
+                <div class="sabores" data-div="doce">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="13" value="13" class="margin0">
+                            </td>
+                            <td>
+                                <label for="13" class="margin0">
+                                    <h3 class="margin0">Chocolate com M&M</h3>
+                                    <h5 class="margin0">Chocolate, creme de leite e M&M.</h5>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="13" class="margin0">
+                                    <h2 class="margin0">R$59,90</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="14" value="14" class="margin0">
+                            </td>
+                            <td>
+                                <label for="14" class="margin0">
+                                    <h3 class="margin0">Romeu e Julieta</h3>
+                                    <h5 class="margin0">Muçarela, Goiabada e Catupiry.</h5>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="14" class="margin0">
+                                    <h2 class="margin0">R$52,90</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="15" value="15" class="margin0">
+                            </td>
+                            <td>
+                                <label for="15" class="margin0">
+                                    <h3 class="margin0">Creme de avelã com frutas</h3>
+                                    <h5 class="margin0">Creme de avelã, Creme de leite e Morango. </h5>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="15" class="margin0">
+                                    <h2 class="margin0">R$59,90</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="16" value="16" class="margin0">
+                            </td>
+                            <td>
+                                <label for="16" class="margin0">
+                                    <h3 class="margin0">Banana caramelizada</h3>
+                                    <h5 class="margin0">Muçarela, Banana e Chocolate Branco Caramelizado.</h5>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="16" class="margin0">
+                                    <h2 class="margin0">R$59,90</h2>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="bebida" class="categoria hidden">
+                <a href="#" class="anterior"><img src="../imagens/esquerda.png" class="anterior"></a>
+                <div class="sabores" data-div="bebida">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="17" value="17" class="margin0">
+                            </td>
+                            <td>
+                                <label for="17" class="margin0">
+                                    <h3 class="margin0">Refrigerante Lata</h3>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="17" class="margin0">
+                                    <h2 class="margin0">R$8,00</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="18" value="18" class="margin0">
+                            </td>
+                            <td>
+                                <label for="18" class="margin0">
+                                    <h3 class="margin0">Refrigerante garrafa </h3>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="18" class="margin0">
+                                    <h2 class="margin0">R$12,00</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="19" value="19" class="margin0">
+                            </td>
+                            <td>
+                                <label for="19" class="margin0">
+                                    <h3 class="margin0">Suco Lata </h3>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="19" class="margin0">
+                                    <h2 class="margin0">R$7,00</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="20" value="20" class="margin0">
+                            </td>
+                            <td>
+                                <label for="20" class="margin0">
+                                    <h3 class="margin0">Suco Natura Jarra</h3>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="20" class="margin0">
+                                    <h2 class="margin0">R$20,00</h2>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="sabores hidden" data-div="bebida">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="21" value="21" class="margin0">
+                            </td>
+                            <td>
+                                <label for="21" class="margin0">
+                                    <h3 class="margin0">Energético </h3>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="21" class="margin0">
+                                    <h2 class="margin0">R$12,00</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="22" value="22" class="margin0">
+                            </td>
+                            <td>
+                                <label for="22" class="margin0">
+                                    <h3 class="margin0">Cerveja Lata</h3>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="22" class="margin0">
+                                    <h2 class="margin0">R$15,00</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="23" value="23" class="margin0">
+                            </td>
+                            <td>
+                                <label for="23" class="margin0">
+                                    <h3 class="margin0">Milk Shake</h3>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="23" class="margin0">
+                                    <h2 class="margin0">R$18,00</h2>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="" id="24" value="24" class="margin0">
+                            </td>
+                            <td>
+                                <label for="24" class="margin0">
+                                    <h3 class="margin0">Água </h3>
+                                </label>
+                            </td>
+                            <td>
+                                <label for="24" class="margin0">
+                                    <h2 class="margin0">R$4,00</h2>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <a href="#" class="proximo"><img src="../imagens/direita.png" class="proximo"></a>
+            </div>
+            <button style="margin-top: 15px;" id="carrinho" onmouseover="mudaFoto('../imagens/Forno 2.png')"
+                onmouseout="mudaFoto('../imagens/Forno 1.png')"><img id="icone" src="../imagens/Forno 1.png"
+                    alt=""></button>
+        </section>
+        <script src="../js/divs.js"></script>
+        <script src="../js/pedidos.js"></script>
+        <script src="../js/valida.js"></script>
+    </div>
+</body>
+
+</html>
